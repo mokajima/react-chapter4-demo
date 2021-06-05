@@ -29,6 +29,7 @@ const App = () => {
           <li key={item}>{item}</li>
         ))}
       </ul>
+      <Total cartItems={cartItems} />
     </div>
   );
 };
@@ -55,6 +56,14 @@ const AddButton = ({ disabled, onClick }) => {
       </button>
     </p>
   );
+};
+
+const Total = ({ cartItems }) => {
+  console.log('renders <Total />');
+
+  const total = cartItems.reduce((acc, cur) => cur.length * 100 + acc, 0);
+
+  return <p>合計: {total}円</p>;
 };
 
 export default App;
