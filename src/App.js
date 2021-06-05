@@ -1,4 +1,4 @@
-import { memo, useCallback, useMemo, useState } from 'react';
+import { memo, useCallback, useState } from 'react';
 
 const App = () => {
   console.log('renders <App />');
@@ -63,23 +63,21 @@ const AddButton = ({ disabled, onClick }) => {
   );
 };
 
-const Total = memo(({ cartItems }) => {
+const Total = ({ cartItems }) => {
   console.log('renders <Total />');
 
-  const total = useMemo(() => {
-    return cartItems.reduce((acc, cur) => {
-      const t = Date.now();
+  const total = cartItems.reduce((acc, cur) => {
+    const t = Date.now();
 
-      while (Date.now() - t < 100) {
-        // 擬似的に100ミリ秒の遅延を発生させる
-      }
+    while (Date.now() - t < 100) {
+      // 擬似的に100ミリ秒の遅延を発生させる
+    }
 
-      return cur.length * 100 + acc;
-    }, 0);
-  }, [cartItems]);
+    return cur.length * 100 + acc;
+  }, 0);
 
   return <p>合計: {total}円</p>;
-});
+};
 
 const ClearButton = memo(({ onClick }) => {
   console.log('renders <ClearButton />');
