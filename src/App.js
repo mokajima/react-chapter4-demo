@@ -1,4 +1,4 @@
-import { memo, useMemo, useState } from 'react';
+import { memo, useCallback, useMemo, useState } from 'react';
 
 const App = () => {
   console.log('renders <App />');
@@ -6,22 +6,22 @@ const App = () => {
   const [item, setItem] = useState('');
   const [cartItems, setCartItems] = useState([]);
 
-  const handleChange = (event) => {
+  const handleChange = useCallback((event) => {
     setItem(event.target.value);
-  };
+  }, []);
 
-  const handleAdd = () => {
+  const handleAdd = useCallback(() => {
     if (cartItems.includes(item)) {
       return;
     }
 
     setCartItems((items) => [...items, item]);
     setItem('');
-  };
+  }, [cartItems, item]);
 
-  const handleClear = () => {
+  const handleClear = useCallback(() => {
     setCartItems([]);
-  };
+  }, []);
 
   return (
     <div style={{ margin: '10px' }}>
