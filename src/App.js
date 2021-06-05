@@ -61,7 +61,15 @@ const AddButton = ({ disabled, onClick }) => {
 const Total = ({ cartItems }) => {
   console.log('renders <Total />');
 
-  const total = cartItems.reduce((acc, cur) => cur.length * 100 + acc, 0);
+  const total = cartItems.reduce((acc, cur) => {
+    const t = Date.now();
+
+    while (Date.now() - t < 100) {
+      // 擬似的に100ミリ秒の遅延を発生させる
+    }
+
+    return cur.length * 100 + acc;
+  }, 0);
 
   return <p>合計: {total}円</p>;
 };
