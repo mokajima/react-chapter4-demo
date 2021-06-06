@@ -1,4 +1,6 @@
-import { memo, useCallback, useMemo, useState } from 'react';
+import { Suspense, lazy, memo, useCallback, useMemo, useState } from 'react';
+
+const AddButton = lazy(() => import('./AddButton'));
 
 const App = () => {
   console.log('renders <App />');
@@ -27,7 +29,9 @@ const App = () => {
     <div style={{ margin: '10px' }}>
       <h1>商品を購入</h1>
       <Input value={item} onChange={handleChange} />
-      <AddButton disabled={item.trim() === ''} onClick={handleAdd} />
+      <Suspense fallback={<div>Loading…</div>}>
+        <AddButton disabled={item.trim() === ''} onClick={handleAdd} />
+      </Suspense>
       <ul>
         {cartItems.map((item) => (
           <li key={item}>{item}</li>
@@ -47,18 +51,6 @@ const Input = ({ value, onChange }) => {
       <label>
         アイテム名: <input type="text" value={value} onChange={onChange} />
       </label>
-    </p>
-  );
-};
-
-const AddButton = ({ disabled, onClick }) => {
-  console.log('renders <AddButton />');
-
-  return (
-    <p>
-      <button disabled={disabled} onClick={onClick}>
-        カートに追加する
-      </button>
     </p>
   );
 };
