@@ -1,70 +1,20 @@
-# Getting Started with Create React App
+# 「第4章 パフォーマンスの壁」サンプルコード
 
-This project was bootstrapped with [Create React App](https://github.com/facebook/create-react-app).
+このリポジトリは『Software Design 2021年8月号』の特集記事「もう怖くない React 3つの壁とその越え方」の「第4章 パフォーマンスの壁」のサンプルコードです。
 
-## Available Scripts
+## 本文のリストと当リポジトリのコミットの対応一覧
 
-In the project directory, you can run:
-
-### `yarn start`
-
-Runs the app in the development mode.\
-Open [http://localhost:3000](http://localhost:3000) to view it in the browser.
-
-The page will reload if you make edits.\
-You will also see any lint errors in the console.
-
-### `yarn test`
-
-Launches the test runner in the interactive watch mode.\
-See the section about [running tests](https://facebook.github.io/create-react-app/docs/running-tests) for more information.
-
-### `yarn build`
-
-Builds the app for production to the `build` folder.\
-It correctly bundles React in production mode and optimizes the build for the best performance.
-
-The build is minified and the filenames include the hashes.\
-Your app is ready to be deployed!
-
-See the section about [deployment](https://facebook.github.io/create-react-app/docs/deployment) for more information.
-
-### `yarn eject`
-
-**Note: this is a one-way operation. Once you `eject`, you can’t go back!**
-
-If you aren’t satisfied with the build tool and configuration choices, you can `eject` at any time. This command will remove the single build dependency from your project.
-
-Instead, it will copy all the configuration files and the transitive dependencies (webpack, Babel, ESLint, etc) right into your project so you have full control over them. All of the commands except `eject` will still work, but they will point to the copied scripts so you can tweak them. At this point you’re on your own.
-
-You don’t have to ever use `eject`. The curated feature set is suitable for small and middle deployments, and you shouldn’t feel obligated to use this feature. However we understand that this tool wouldn’t be useful if you couldn’t customize it when you are ready for it.
-
-## Learn More
-
-You can learn more in the [Create React App documentation](https://facebook.github.io/create-react-app/docs/getting-started).
-
-To learn React, check out the [React documentation](https://reactjs.org/).
-
-### Code Splitting
-
-This section has moved here: [https://facebook.github.io/create-react-app/docs/code-splitting](https://facebook.github.io/create-react-app/docs/code-splitting)
-
-### Analyzing the Bundle Size
-
-This section has moved here: [https://facebook.github.io/create-react-app/docs/analyzing-the-bundle-size](https://facebook.github.io/create-react-app/docs/analyzing-the-bundle-size)
-
-### Making a Progressive Web App
-
-This section has moved here: [https://facebook.github.io/create-react-app/docs/making-a-progressive-web-app](https://facebook.github.io/create-react-app/docs/making-a-progressive-web-app)
-
-### Advanced Configuration
-
-This section has moved here: [https://facebook.github.io/create-react-app/docs/advanced-configuration](https://facebook.github.io/create-react-app/docs/advanced-configuration)
-
-### Deployment
-
-This section has moved here: [https://facebook.github.io/create-react-app/docs/deployment](https://facebook.github.io/create-react-app/docs/deployment)
-
-### `yarn build` fails to minify
-
-This section has moved here: [https://facebook.github.io/create-react-app/docs/troubleshooting#npm-run-build-fails-to-minify](https://facebook.github.io/create-react-app/docs/troubleshooting#npm-run-build-fails-to-minify)
+| リスト | コミット |
+| --- | --- |
+| リスト1 | [a48a743](https://github.com/mokajima/react-chapter4-demo/commit/a48a7434c4a4379a04016ac53b6c60f67b23fe11) |
+| リスト2 | [a48a743](https://github.com/mokajima/react-chapter4-demo/commit/a48a7434c4a4379a04016ac53b6c60f67b23fe11) |
+| リスト4 | [5de24d5](https://github.com/mokajima/react-chapter4-demo/commit/5de24d52f0055ca1e55d2f22f898be401a07beab) |
+| リスト5 | [ec22e9e](https://github.com/mokajima/react-chapter4-demo/commit/ec22e9e848107f10bbcecb332af6674c68acff32) |
+| リスト6 | [d1b03eb](https://github.com/mokajima/react-chapter4-demo/commit/d1b03ebf9f8f829b80f3aa2c4d24992a9292fa0a) |
+| リスト7 | [82b04e2](https://github.com/mokajima/react-chapter4-demo/commit/82b04e250ee196bb2a00b6dc7e75b086db10e4a2) |
+| リスト8 | [04dcc59](https://github.com/mokajima/react-chapter4-demo/commit/04dcc5973edb2ec9b6c8d4566c3348e5cd6eda51) |
+| リスト9 | [188b2d6](https://github.com/mokajima/react-chapter4-demo/commit/188b2d62a2e666753c00b137a66d3afb9e387b43) |
+| リスト10 | [aeae980](https://github.com/mokajima/react-chapter4-demo/commit/aeae9809f21162aacdcc5c940af877e9f3539111) |
+| リスト11 | [f078fe7](https://github.com/mokajima/react-chapter4-demo/commit/f078fe764b7b8c09d7159de5f19c064729a36673) |
+| リスト12 | [6ba6502](https://github.com/mokajima/react-chapter4-demo/commit/6ba65021c6f067b449625fe95fa77303f3c0ee14) [d967bc2](https://github.com/mokajima/react-chapter4-demo/commit/d967bc261dca20875b6a7f945582e0a49c8bc8d6) |
+| リスト13 | [aa12764](https://github.com/mokajima/react-chapter4-demo/commit/aa127645f0f5835f6a17e5538e8ae9ae6e6261ad) |
