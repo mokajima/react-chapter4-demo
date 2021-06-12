@@ -19,6 +19,10 @@ const App = () => {
     setItem('');
   };
 
+  const handleClear = () => {
+    setCartItems([]);
+  };
+
   return (
     <div style={{ margin: '10px' }}>
       <h1>商品を購入</h1>
@@ -30,6 +34,7 @@ const App = () => {
         ))}
       </ul>
       <Total cartItems={cartItems} />
+      <ClearButton onClick={handleClear} />
     </div>
   );
 };
@@ -74,6 +79,18 @@ const Total = memo(({ cartItems }) => {
   }, [cartItems]);
 
   return <p>合計: {total}円</p>;
+});
+
+const ClearButton = memo(({ onClick }) => {
+  console.log('renders <ClearButton />');
+
+  return (
+    <p>
+      <button onClick={onClick}>
+        カートを空にする
+      </button>
+    </p>
+  );
 });
 
 export default App;
